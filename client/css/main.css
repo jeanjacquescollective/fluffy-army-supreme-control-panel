@@ -1,0 +1,129 @@
+:root {
+  --primary-color: rgb(208, 118, 163);
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: sans-serif;
+  background: var(--primary-color);
+  color: #eee;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+/* ===== CONNECTION ===== */
+#status {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #800;
+  display: inline-block;
+}
+
+.connected {
+  background: #080 !important;
+}
+
+/* ===== APP LAYOUT ===== */
+.app__layout {
+  display: flex;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: #181818;
+  padding: 10px;
+  border-right: 1px solid #333;
+}
+
+.sidebar__title {
+  margin-top: 0;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__list li {
+  font-size: 14px;
+  padding: 4px 0;
+  opacity: 0.9;
+}
+
+/* ===== MAIN ===== */
+.app__main {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* ===== GROUPS ===== */
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.group {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 6px;
+  background: #1b1b1b;
+}
+
+.group__title {
+  margin-top: 0;
+}
+
+.group__input {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.group__ip-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.group__ip-item {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.group button {
+  margin: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* ===== ROBOT TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #333;
+  padding: 6px;
+  text-align: center;
+}
+
+.robots__table {
+  width: 100%;
+}
+
+.robots__row--head {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.robots__cell select,
+.robots__cell button {
+  margin: 2px;
+}

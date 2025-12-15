@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fluffy Army Supreme Control Panel</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="app">
+
+  <div class="app__layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar app__sidebar">
+      <h2 class="sidebar__title">Known Robots</h2>
+      <ul class="sidebar__list" id="robotList"></ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="app__main">
+
+      <h1 class="app__title">Fluffy Army Supreme Control Panel</h1>
+
+      <div class="connection app__connection">
+        <span id="status" class="connection__status">Disconnected</span>
+      </div>
+
+      <!-- GROUPS -->
+      <section class="groups app__groups" id="groups">
+        <!-- groups injected by JS -->
+      </section>
+
+      <!-- LIVE STATE TABLE -->
+      <section class="robots app__robots">
+        <h2 class="robots__title">Live Robot States</h2>
+
+        <table class="robots__table">
+          <thead class="robots__thead">
+            <tr class="robots__row robots__row--head">
+              <th class="robots__cell">IP</th>
+              <th class="robots__cell">Battery</th>
+              <th class="robots__cell">On</th>
+              <th class="robots__cell">LEDs</th>
+              <th class="robots__cell">Add to Group</th>
+            </tr>
+          </thead>
+          <tbody class="robots__tbody" id="robotTable"></tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
