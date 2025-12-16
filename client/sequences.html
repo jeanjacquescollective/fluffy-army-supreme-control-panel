@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Fluffy Army Queues Control Panel</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body class="app">
+        <div class="app__layout">
+            <!-- SIDEBAR -->
+            <aside class="sidebar app__sidebar">
+                <h2 class="sidebar__title">Known Robots</h2>
+                <ul class="sidebar__list" id="robotList"></ul>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="app__main">
+                <h1 class="app__title">Fluffy Army Supreme Queue Panel</h1>
+                <nav class="navigation app__navigation">
+                    <a class="navigation__link" href="index.html">Supreme control</a>
+                </nav>
+                <div class="connection app__connection">
+                    <span class="connection__status" id="status">Disconnected</span>
+                </div>
+
+                <!-- SEQUENCES -->
+                <section class="queues app__queues">
+                    <div class="queues__nav">
+                        <button id="prevQueue" class="btn queues__nav-btn">⏮ Prev</button>
+                        <button id="nextQueue" class="btn queues__nav-btn">Next ⏭</button>
+                        <button id="stopAll" class="btn btn--danger queues__nav-btn">⏹ Stop All</button>
+                    </div>
+
+                    <div id="activeQueue" class="queues__active">Active: none</div>
+
+                    <div class="queues__header">
+                        <h2 class="queues__title">Queues</h2>
+                        <button id="addQueueBtn" class="btn btn--primary queues__add-btn">
+                            + Add Queue
+                        </button>
+                    </div>
+
+                    <div id="queues" class="queues__list"></div>
+                </section>
+
+                <script src="js/main.js"></script>
+            </main>
+        </div>
+    </body>
+</html>
